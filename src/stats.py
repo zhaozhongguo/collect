@@ -207,6 +207,7 @@ def get_instance_stats(instance):
         
     try:
         mem_percent = get_dommemstat_usage(instance)
+        stats_info['mem_percent'] = mem_percent
     except Exception:
         logging.error(traceback.print_exc())
     

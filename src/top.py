@@ -106,7 +106,7 @@ def get_top_info_by_instance(instance):
 
                 top_dict[instance['uuid']] = top_info
             else:
-                logging.error("Failed to get top info of " + instance)
+                logging.error("Failed to get top info of " + str(instance))
         else:
             logging.debug("It's windows instance:%s, skip" % instance['uuid'])
     except Exception:
